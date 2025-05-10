@@ -1,0 +1,89 @@
+.bodydivlight{
+    min-height: 1000px;
+    background-color: white;
+}
+.bodydivdark{
+    min-height: 1000px;
+    background-color: rgb(0, 0, 0); 
+}
+
+#button{
+    width:96px;
+    height:46px;
+    border-radius: 5px;
+}
+#button:hover{
+    background-color: rgb(146, 253, 246);
+    box-shadow: 1px 1px;
+}
+#imagediv{
+    
+    width: 50px;
+}
+
+
+#button:active{
+    transform: translateX(2px);
+}
+#getinfo{
+width: 300px;
+height: 40px;
+}
+
+#getinfo:hover{
+    background-color: rgb(255, 250, 119);
+}
+
+.inputdiv {
+    width: 500px;
+    display: flex;        
+
+    gap: 10px;            
+}
+#listcontainer{
+    
+    overflow-x: auto;
+    margin-top: 3px;
+    width: 409px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    min-height:300px;
+    
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.listitem{
+    width:395px;
+    min-height: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.subdiv{
+    margin-left:500px;
+    width: 800px;
+}
+
+.imagetag:hover{
+ border-width: 3px;
+ border-color: black;
+ border-style: solid;
+}
+
+#maindiv{
+    
+}
+
+.listbutton{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+}
