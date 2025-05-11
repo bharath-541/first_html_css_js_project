@@ -1,89 +1,155 @@
-.bodydivlight{
-    min-height: 1000px;
-    background-color: white;
-}
-.bodydivdark{
-    min-height: 1000px;
-    background-color: rgb(0, 0, 0); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#button{
-    width:96px;
-    height:46px;
-    border-radius: 5px;
-}
-#button:hover{
-    background-color: rgb(146, 253, 246);
-    box-shadow: 1px 1px;
-}
-#imagediv{
-    
-    width: 50px;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 
-#button:active{
-    transform: translateX(2px);
-}
-#getinfo{
-width: 300px;
-height: 40px;
+.bodydivlight {
+    min-height: 100vh;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
 }
 
-#getinfo:hover{
-    background-color: rgb(255, 250, 119);
+.bodydivdark {
+    min-height: 100vh;
+    background-color: #121212;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+
+.heading {
+    background-color: #e6f0fa;
+    border: 2px solid #000;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 400px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    color: #333;
+}
+
+
+.subdiv {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
 }
 
 .inputdiv {
-    width: 500px;
-    display: flex;        
-
-    gap: 10px;            
-}
-#listcontainer{
-    
-    overflow-x: auto;
-    margin-top: 3px;
-    width: 409px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    min-height:300px;
-    
-    border-radius: 5px;
-    background-color: aliceblue;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
-.listitem{
-    width:395px;
-    min-height: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    overflow-y: auto;
+#getinfo {
+    flex: 1;
+    min-width: 250px;
+    height: 45px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
 }
 
-.subdiv{
-    margin-left:500px;
-    width: 800px;
+#getinfo:hover {
+    background-color: #fffaa1;
 }
 
-.imagetag:hover{
- border-width: 3px;
- border-color: black;
- border-style: solid;
+
+#button {
+    height: 45px;
+    padding: 0 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
 }
 
-#maindiv{
-    
+#button:hover {
+    background-color: #5bded6;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.listbutton{
+#button:active {
+    transform: translateY(2px);
+}
+
+
+#imagediv {
     width: 40px;
     height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#imagetag {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    transition: border 0.3s ease;
+}
+
+#imagetag:hover {
+    border: 3px solid #000;
+}
+
+
+#listcontainer {
+    overflow-y: auto;
+    margin-top: 10px;
+    width: 100%;
+    min-height: 300px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+    padding: 10px;
+}
+
+
+.listitem {
+    background-color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-break: break-word;
+}
+
+
+.listbutton {
+    width: 36px;
+    height: 36px;
     background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.listbutton:hover {
+    background-color: #ff4d4d;
 }
